@@ -1,0 +1,20 @@
+!wrengine:VIEW type:page
+
+!!import {
+    components(
+        simplybutton from "/button.wview"
+    )
+} !!
+
+!!page {
+    box() {
+        simplybutton(
+            text="CLICK ME"
+            color=#303030
+            click="myfunction()"
+            id="button"
+        )
+    }
+} !!
+
+!export-url:"/"

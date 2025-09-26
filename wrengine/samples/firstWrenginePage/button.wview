@@ -1,0 +1,28 @@
+!wrengine:VIEW type:component
+
+!!import {
+    styles(
+        button from "/button.wstyle"
+    )
+    scripts(
+        script from "/page.wscript"
+    )
+} !!
+
+!!props {
+    text: string
+    color: string
+    click: string
+    id: string
+} !!
+
+!!component {
+    button(
+        label=prop(text)
+        bg-color=prop(color)
+        on-click=prop(click)
+        id=prop(id)
+    )
+} !!
+
+!export-name:"simplybutton"
